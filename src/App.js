@@ -1,13 +1,16 @@
 import React from 'react';
+import Navbar from './Navbar';
+import CartContainer from './CartContainer';
+
 import { useGlobalContext } from './context';
 
 function App() {
-  const data = useGlobalContext();
-  console.log({data})
+  
   return (
-    <div >
-      <h1>Cart</h1>
-    </div>
+    <main >
+      <Navbar/>
+      <CartContainer/>
+    </main>
   );
 }
 
