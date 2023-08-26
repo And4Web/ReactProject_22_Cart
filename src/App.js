@@ -6,6 +6,8 @@ import { useGlobalContext } from './context';
 
 function App() {
   const {isLoading} = useGlobalContext();
+  
+
   if(isLoading){
     return (
       <div className="loading">

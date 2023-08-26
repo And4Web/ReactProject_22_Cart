@@ -18,7 +18,19 @@ export const AppContextProvider = ({children}) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  return <AppContext.Provider value={{...state}}>{children}</AppContext.Provider>
+  const clearCart = () => {
+    dispatch({type: "CLEAR_CART"});
+  }
+  const removeItem = (id) => {
+    dispatch({type: "REMOVE_ITEM", payload: id})
+  } 
+  const increaseAmount = (id) => {
+    dispatch({type: "INCREASE_AMOUNT", payload: id})
+  }
+  const decreaseAmount = (id) => {
+    dispatch({type: "DECREASE_AMOUNT", payload: id})
+  }
+  return <AppContext.Provider value={{...state, clearCart, removeItem, increaseAmount, decreaseAmount}}>{children}</AppContext.Provider>
 }
 
 // custom useContext hook
