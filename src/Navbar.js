@@ -2,6 +2,8 @@ import React from "react";
 import { useGlobalContext } from "./context";
 
 function Navbar() {
+  const {amount} = useGlobalContext();
+
   return (
     <nav className="nav-center">
       <h3>useReducer</h3>
@@ -11,7 +13,7 @@ function Navbar() {
         </svg>
 
         <div className="amount-container">
-          <p className="total-amount">5</p>
+          <p className="total-amount">{amount}</p>
         </div>
       </div>
     </nav>

@@ -8,14 +8,14 @@ export default [
   },
   {
     id: 2,
-    title: 'apple iphone 13',
+    title: 'apple iphone 13 pro',
     price: 999.99,
-    img: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG2.png',
+    img: 'https://www.pngmart.com/files/21/iPhone-13-Pro-PNG-Image.png',
     amount: 1,
   },
   {
     id: 3,
-    title: 'Xiaomi Redmi Note 12',
+    title: 'Xiaomi Redmi Note 12 pro',
     price: 299.99,
     img: 'https://mobileworldpirmahal.com/wp-content/uploads/2023/06/Xiaomi-Redmi-Note-12.png',
     amount: 1,
