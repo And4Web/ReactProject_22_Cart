@@ -24,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+// see refactoring of code: 7:36 and revisit the implementation of the total and amount update feature.
