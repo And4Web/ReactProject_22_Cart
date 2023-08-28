@@ -5,8 +5,7 @@ import CartContainer from './CartContainer';
 import { useGlobalContext } from './context';
 
 function App() {
-  const {isLoading} = useGlobalContext();
-  
+  const {isLoading} = useGlobalContext();  
 
   if(isLoading){
     return (
@@ -15,6 +14,7 @@ function App() {
       </div>
     )
   }
+
   return (
     <main >
       <Navbar/>

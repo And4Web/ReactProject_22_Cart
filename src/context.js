@@ -30,6 +30,10 @@ export const AppContextProvider = ({children}) => {
   const decreaseAmount = (id) => {
     dispatch({type: "DECREASE_AMOUNT", payload: id})
   }
+  
+  useEffect(()=>{
+    dispatch({type: "GET_TOTALS"})
+  },[state.cart])
   return <AppContext.Provider value={{...state, clearCart, removeItem, increaseAmount, decreaseAmount}}>{children}</AppContext.Provider>
 }
 
